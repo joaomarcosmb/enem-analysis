@@ -15,7 +15,7 @@ st.set_page_config(
 def load_data():
     """Load preprocessed ENEM data"""
     try:
-        df = pd.read_csv("data/processed/preprocessed_data.csv")
+        df = pd.read_csv("src/data/processed/preprocessed_data.csv")
         return df
     except Exception as e:
         st.error(f"Error loading data: {e}")
